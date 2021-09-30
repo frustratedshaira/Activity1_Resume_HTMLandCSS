@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+}
+body {
+  background:rgba(131, 129, 129, 0.274);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 50px;
+  display: grid;  
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0,0,0.1);
+}
+.container .left_side {
+  position: relative;
+  background: #957DAD;
+  padding: 40px;
+}
+.profileText {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-bottom: 20px;
+ border-bottom: 1px solid rgba(255,255,255,0.2)
+}
+.profileText .imgBox {
+ position: relative;
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ overflow: hidden; 
+}
+.profileText .imgBox img {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ border: 3px solid white;
+ border-radius: 50%;
+ padding: 8px;
+}
+.profileText h2 {
+ color: #fff;
+ font-size: 1.5em;
+ margin-top: 20px;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: 600;
+ line-height: 1.5em;
+}
+.profileText h2 span {
+ font-size: 0.8em;
+ font-weight: 300;
+}
+.container .left_side p {
+  color:rgb(235, 227, 227);
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.contactInfo {
+ padding-top: 40px;
+ margin-bottom: 0%;
+} 
+.contactInfo ul {
+ position: relative;
+}
+.contactInfo ul li {
+ position: relative;
+ list-style: circle;
+ margin: 10px 0;
+cursor: pointer;
+}
+.about {
+  margin-bottom: 20px;
+ }
+.about.last-child {
+  margin-bottom: 100;
+ }
+.title2 {
+  color: rgba(0, 0, 0, 0.795);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0%;
+ }
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+ }
+.about .box .info {
+  min-width: 80px;
+ }
+.about .box .info h5 {
+  text-transform: uppercase;
+  color: rgb(235, 227, 227);
+  font-weight: 900;
+ }
+.about .box .text h4 {
+  color:rgb(235, 227, 227);
+  font-size: 16px;
+  font-weight: 200;
+ }
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+ }
+ .skills h4 {
+   color: white ;
+   text-transform: uppercase;
+   font-weight: 500;
+   margin-top: 20px;
+   margin-bottom: 10px;
+ }
+ .dot {
+  height: 15px;
+  width: 15px;
+  background-color: #3b2f4b;
+  border-radius: 50%;
+  display: inline-block;
+ }
+ .dot1 {
+  height: 15px;
+  width: 15px;
+  background-color: gainsboro;
+  border-radius: 50%;
+  display: inline-block;
+ }
+.title i  {
+  background-color: gray;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid rgb(0, 0, 0);
+ border-radius: 50%;
+ padding: 8px;
+}
+.title2 i  {
+  background-color: gainsboro;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0); 
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.contactInfo .education ul {
+  position: relative;
+}
+.contactInfo .education ul li {
+  margin-bottom: 10px;
+}
+.contactInfo .education h5 {
+  color: #848c90;
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 5px;
+}
+.contactInfo .education h4:nth-child(2) {
+  color: rgba(51, 51, 51, 0.753);;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.contactInfo .education h3 {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.829);
+  font-weight: 100;
+}
+.contactInfo .education h4 {
+  color: #000000d0;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+
+.contactInfo .experience ul {
+  position: relative;
+}
+.contactInfo .experience ul li {
+  margin-bottom: 15px;
+}
+.contactInfo .experience h5 {
+  color: #848c90;
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 5px;
+}
+.contactInfo .experience h4:nth-child(2) {
+  color: rgba(51, 51, 51, 0.753);;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.contactInfo .experience h3 {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.829);
+  font-weight: 100;
+}
+.contactInfo .experience h4 {
+  color: #000000d0;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+.contactInfo .box {
+  margin-top: 0%;
+}
+.contactInfo.language .text {
+  color:black;
+}
+.contactInfo.language .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: gainsboro;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.contactInfo.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #957DAD;
+}
+.container .right_side {
+  position: relative;
+  background: rgb(255, 255, 255);
+  padding: 60px;
+  padding-top: 20px;
+} 
+
